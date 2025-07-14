@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 第一行：图片、标题和价格 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 图片 -->
+        <ImageView
+            android:id="@+id/iv_item_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_placeholder" />
+
+        <!-- 标题和价格 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <!-- 标题 -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- 价格 -->
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: $0.00"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 第二行：数量按钮和文本 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="8dp">
+
+        <!-- 增加按钮 -->
+        <Button
+            android:id="@+id/btn_increase"
+            android:layout_width="54dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:layout_marginLeft="16dp" />
+
+        <!-- 数量文本 -->
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:textSize="14sp"
+            android:layout_marginLeft="16dp" />
+
+        <!-- 减少按钮 -->
+        <Button
+            android:id="@+id/btn_decrease"
+            android:layout_width="54dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:layout_marginLeft="16dp" />
+    </LinearLayout>
+</LinearLayout>

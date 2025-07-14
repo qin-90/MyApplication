@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="category_options">
+        <item>最新</item>
+        <item>热门</item>
+    </string-array>
+</resources>
